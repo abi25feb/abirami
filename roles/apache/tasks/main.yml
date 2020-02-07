@@ -1,0 +1,22 @@
+---
+# tasks file for apache
+- name: Installing apache
+  yum:
+    name: ['httpd','httpd-tools']
+    state: "installed"
+
+- name: copyingthe template
+  template:
+    src: "httpd.conf.j2"
+    dest: "/etc/httpd/conf/httpd.conf"
+
+- name: disable selinux
+  selinux:
+    state: disabled
+
+- name: service start
+  service:
+    name: "httpd"
+    state: "restarted"
+
+ 
