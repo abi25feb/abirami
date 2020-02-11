@@ -1,0 +1,36 @@
+#!bin/bash
+array1=($(rpm -qa))
+#for i in ${array1[@]}
+#do
+#echo "$i"
+#done
+
+for((i=0;i<${#array1[@]};i++))
+do
+array2=($(rpm -ql "${array1[i]}"))
+
+#printf '%s\n' ${array2[@]}
+#sleep 3
+
+#sleep 2
+
+#for((a=0;a<${#array2[@]};a++))
+#do
+#if [ "${array2[a]}" == "ifconfig" ]
+#then
+#sleep 2
+printf '%s\n' ${array2[@]}| grep 'ifconfig'
+#else
+#echo "ifconfig not found"
+#fi
+
+
+done
+#done
+
+#for i in ${array2[@]}
+#do 
+#echo "$i"
+#sleep 4
+#done
+#done
