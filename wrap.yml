@@ -1,0 +1,8 @@
+- hosts: dev
+  become: true
+
+<<<<<<< HEAD
+=======
+  roles:
+    - { name: apache, ports: 7070  }
+>>>>>>> 050712e3a47aff88224eb3d7dc328ad5dfdf4649
