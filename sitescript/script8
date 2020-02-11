@@ -1,0 +1,13 @@
+#!bin/bash
+
+var="$(curl -Is "www.google.com" | head -1 | awk '/HTTP\// {print$2}')"
+
+if [ $var -eq 200 ]
+ 
+then
+echo " site is working"
+else 
+echo " error"
+fi
+
+

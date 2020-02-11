@@ -1,0 +1,21 @@
+#!bin/bash
+
+read -p $1
+d=$(date +%y-%m-%d)
+
+echo "$d"
+var="$(curl -Is --connect-timeout 5 "$1" | head -1 | awk '/HTTP\// {print$2}')"
+echo $var
+read
+if [ $var -eq 200 ] 2> /dev/null
+then
+echo " site is working"
+curl -s "$1" -o output.txt
+newoutput= $output.txt.$d
+#cat >> $newoutput
+echo $d >> output.txt
+else 
+echo " error"
+fi
+
+

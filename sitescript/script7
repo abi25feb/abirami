@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if curl -s "http://www.goole.com" -o output.txt
+then
+     echo " the website is working fine"
+else
+    echo "Error"
+fi

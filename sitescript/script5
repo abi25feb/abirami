@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if curl -s "http://www.google.com" | grep "about.html"
+then
+     echo " the website is working fine"
+else
+    echo "Error"
+fi

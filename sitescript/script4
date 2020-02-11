@@ -1,0 +1,11 @@
+#!bin/bash
+#site=www.google.com
+
+curl -I "www.google.com"  2>$1 | awk '/HTTP\// {print$2}'
+
+if ["$?" -eq 0]
+then
+echo "site is up"
+else
+echo "site is down"
+fi
