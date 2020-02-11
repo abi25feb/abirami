@@ -1,0 +1,6 @@
+#!/bin/bash
+ls home/vagrant/abi/ -type f -print0 | xargs wc -l
+#ls -l|wc -l |xargs -I{}
+xargs echo
+
+

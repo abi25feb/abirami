@@ -1,0 +1,5 @@
+#!/bin/bash
+find /home/vagrant/abi/ -type f -print0 |xargs -t
+xargs echo
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+ls /home/vagrant/abi/ | wc -l | xargs
+while xargs > 10
+do
+mv abi dest 
+done
+

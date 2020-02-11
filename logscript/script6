@@ -1,0 +1,10 @@
+#!/bin/bash
+ls /home/vagrant/abi/ | wc -l | xargs
+while xargs > 10
+do
+for i in $(find /home/vagrant/abi/* | tail -5)
+do
+mv $i dest
+done 
+done
+
