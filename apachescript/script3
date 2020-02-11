@@ -1,0 +1,21 @@
+#!bin/bash
+
+if (  rpm -q java-1.8.0-openjdk-devel  )
+then 
+echo " already installed " ;
+else
+ echo " installing packages " ;
+ yum install java-1.8.0-openjdk-devel -y;
+
+fi 
+
+cd /usr/local
+wget http://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.99/bin/apache-tomcat-7.0.99.tar.gz
+tar -xvf apache-tomcat-7.0.99.tar.gz
+mv apache-tomcat-7.0.99 tomcat7
+echo "export CATALINA_HOME="/usr/local/tomcat7"" >> ~/.bashrc
+source ~/.bashrc
+cd /usr/local/tomcat7/bin
+./startup.sh
+
+echo " finished"

@@ -1,0 +1,13 @@
+#!bin/bash
+
+if (  rpm -q java-1.8.0-openjdk-devel  )
+then 
+echo " already installed " ;
+else
+ echo " installing packages " ;
+ yum install java-1.8.0-openjdk-devel -y;
+
+fi 
+
+
+
