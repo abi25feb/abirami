@@ -1,0 +1,32 @@
+---
+# tasks file for tomcat
+#
+- name: install tomcat
+  yum:
+    name: ["tomcat"]
+    state: "installed"
+
+- name: change in config file
+  template:
+    src: "tomcat.conf.j2"
+    dest: "/usr/share/tomcat/conf/tomcat.conf"
+- name: install admin packages
+  yum:
+    name: ['tomcat-webapps','tomcat-admin-webapps']
+    state: "installed"
+- name: add user in config file
+  template: 
+    src: "user.xml.j2"
+    dest: "/usr/share/tomcat/conf/tomcat-users.xml"
+- name: start tomcat
+  service:
+    name: "tomcat"
+    state: "restarted"
+- name: enable tomcat
+  service:
+    name: "tomcat"
+    enabled: "yes"
+
+
+
+
