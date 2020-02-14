@@ -588,3 +588,40 @@ exit
 ls
 sudo su
 exit
+mvn --version
+ls
+cd 
+[vagrant@localhost ~]$
+cd /usr/local/src
+ls
+cd apache-maven
+ls
+cd bin
+ls
+cd ..
+exit
+ls
+mvn --version
+rpm -q jenkins
+jenkins --version
+cd /var/lib/jenkins
+ls
+cd nodes
+ls
+cd node01
+ls
+vim ssh-host-key.xml
+vim config.xml
+cd ..
+cd /usr/local/src/apache-maven
+ls
+echo $path
+echo $PATH
+cd ..
+echo $PATH
+dcoker
+rpm -q docker
+sudo su
+exit
+ls
+sudo su

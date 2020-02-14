@@ -11,8 +11,8 @@
 ~MSle0~/host
 
 # Command Line History (newest to oldest):
-:q!
 :wq!
+:q!
 :s
 
 # Search String History (newest to oldest):
@@ -27,21 +27,27 @@
 
 # Registers:
 ""-	CHAR	0
-	i
+	x
 
 # File marks:
-'0  1  0  ~/repo/tomcat7/tomcat/templates/tomcat.conf.j2
-'1  29  0  ~/repo/tomcat7/tomcat/tasks/main.yml
-'2  32  0  ~/repo/tomcat7/tomcat/tasks/main.yml
-'3  1  1  ~/repo/tomcat7/wrap.yml
-'4  19  0  ~/apachescript/script3
-'5  14  0  ~/sitescript/script11
-'6  1  3  /var/lib/jenkins/.ssh/id_rsa.pub
-'7  4  3  ~/abi.sh
-'8  3  31  ~/abi.sh
-'9  48  5  /etc/ansible/hosts
+'0  28  13  ~/repo/maven-code/pom.xml
+'1  32  0  /var/lib/jenkins/workspace/maven-deploy1/pom.xml
+'2  1  0  /var/lib/jenkins/nodes/node01/config.xml
+'3  1  0  /var/lib/jenkins/nodes/node01/ssh-host-key.xml
+'4  1  0  ~/repo/tomcat7/tomcat/templates/tomcat.conf.j2
+'5  29  0  ~/repo/tomcat7/tomcat/tasks/main.yml
+'6  32  0  ~/repo/tomcat7/tomcat/tasks/main.yml
+'7  1  1  ~/repo/tomcat7/wrap.yml
+'8  19  0  ~/apachescript/script3
+'9  14  0  ~/sitescript/script11
 
 # Jumplist (newest first):
+-'  28  13  ~/repo/maven-code/pom.xml
+-'  1  0  ~/repo/maven-code/pom.xml
+-'  32  0  /var/lib/jenkins/workspace/maven-deploy1/pom.xml
+-'  1  0  /var/lib/jenkins/workspace/maven-deploy1/pom.xml
+-'  1  0  /var/lib/jenkins/nodes/node01/config.xml
+-'  1  0  /var/lib/jenkins/nodes/node01/ssh-host-key.xml
 -'  1  0  ~/repo/tomcat7/tomcat/templates/tomcat.conf.j2
 -'  29  0  ~/repo/tomcat7/tomcat/tasks/main.yml
 -'  32  0  ~/repo/tomcat7/tomcat/tasks/main.yml
@@ -135,12 +141,25 @@
 -'  46  0  /etc/ansible/hosts
 -'  44  0  /etc/ansible/hosts
 -'  1  0  /etc/ansible/hosts
--'  67  31  /etc/ansible/ansible.cfg
--'  374  0  /etc/ansible/ansible.cfg
--'  151  0  /etc/ansible/ansible.cfg
--'  1  0  /etc/ansible/ansible.cfg
 
 # History of marks within files (newest to oldest):
+
+> ~/repo/maven-code/pom.xml
+	"	28	13
+	^	28	14
+	.	27	35
+	+	1	2
+	+	26	27
+	+	27	35
+
+> /var/lib/jenkins/workspace/maven-deploy1/pom.xml
+	"	32	0
+
+> /var/lib/jenkins/nodes/node01/config.xml
+	"	1	0
+
+> /var/lib/jenkins/nodes/node01/ssh-host-key.xml
+	"	1	0
 
 > ~/repo/tomcat7/tomcat/templates/tomcat.conf.j2
 	"	1	0
